@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omkar Kashiram Gorule | Portfolio Resume</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ===== GENERAL STYLES ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f4f4f4;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      text-align: center;
+      padding: 70px 20px 40px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      border-bottom: 3px solid rgba(255,255,255,0.2);
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.08);
+    }
+
+    header h1 {
+      font-size: 2.6em;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
+    /* ===== SECTION STYLING ===== */
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      transform: translateY(60px);
+      opacity: 0;
+      transition: all 0.8s ease;
+    }
+
+    section.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    section h2 {
+      color: #ffd166;
+      border-left: 4px solid #ffd166;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    section p, section ul {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    ul li {
+      background: rgba(255,255,255,0.15);
+      padding: 12px 15px;
+      margin: 8px 0;
+      border-radius: 10px;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    ul li:hover {
+      background: rgba(255,255,255,0.25);
+      transform: translateX(8px);
+    }
+
+    /* ===== SOCIAL LINKS ===== */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      color: #fff;
+      font-size: 1.8rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #ffd166;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.95rem;
+      opacity: 0.8;
+      background: rgba(255,255,255,0.08);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      section {
+        margin: 30px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Replace image URL with your own profile photo -->
+    <img src="my.png" alt="Omkar Gorule Profile Photo">
+    <h1>Omkar Kashiram Gorule</h1>
+    <p>Web Developer | Java Programmer | AI Enthusiast</p>
+  </header>
+
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <b>Omkar</b>, a passionate Computer Engineering student who loves turning creative ideas into real-world projects.
+      My focus areas include AI, full-stack web development, and Java programming. I enjoy working with frameworks like Django and Flask to
+      create intelligent, interactive, and user-friendly applications.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>Java</li>
+      <li>Data Structures & Algorithms (DSA)</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Django, Flask</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>
+      💼 <b>Inventory Management System</b> — Java + MySQL  
+      Designed and developed a desktop-based inventory system with product, customer, and order management modules.  
+
+      <br><br>🤖 <b>AI Skin Remedies Chatbot</b> — Django + TensorFlow  
+      Created an AI chatbot that suggests skincare remedies based on user inputs and analysis.  
+
+      <br><br>🦯 <b>Smart Stick for Blind Persons</b> — Arduino Nano  
+      Built an assistive IoT device with ultrasonic, soil, and LDR sensors for obstacle and hazard detection.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Connect With Me</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/omkar-gorule-b28805386/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/omkargorule17" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Omkar Kashiram Gorule | All Rights Reserved
+  </footer>
+
+  <script>
+    // Slide-down animation on scroll
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+      const trigger = window.innerHeight * 0.8;
+      sections.forEach((section) => {
+        const top = section.getBoundingClientRect().top;
+        if (top < trigger) {
+          section.classList.add("show");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
